@@ -9,8 +9,11 @@ document.getElementById('speedUp').addEventListener('click', async () => {
 
 function speedUpVideo() {
   const videoPlayer = document.querySelector('video');
+  const videoContainer = document.querySelector('.rendererContainer');
   if (videoPlayer) {
     videoPlayer.playbackRate += 0.25;
+  } else if (videoContainer) {
+    videoContainer.playbackRate += 0.25;
   }
 }
 
@@ -25,8 +28,11 @@ document.getElementById('speedDown').addEventListener('click', async () => {
 
 function speedDownVideo() {
   const videoPlayer = document.querySelector('video');
+  const videoContainer = document.querySelector('.rendererContainer');
   if (videoPlayer) {
     videoPlayer.playbackRate -= 0.25;
+  } else if (videoContainer) {
+    videoContainer.playbackRate -= 0.25;
   }
 }
 
@@ -41,8 +47,11 @@ document.getElementById('speedNormal').addEventListener('click', async () => {
 
 function resetSpeed() {
   const videoPlayer = document.querySelector('video');
+  const videoContainer = document.querySelector('.rendererContainer');
   if (videoPlayer) {
     videoPlayer.playbackRate = 1;
+  } else if (videoContainer) {
+    videoContainer.playbackRate = 1;
   }
 }
 
@@ -57,8 +66,11 @@ document.getElementById('speed2').addEventListener('click', async () => {
 
 function speed2() {
   const videoPlayer = document.querySelector('video');
+  const videoContainer = document.querySelector('.rendererContainer');
   if (videoPlayer) {
     videoPlayer.playbackRate = 2;
+  } else if (videoContainer) {
+    videoContainer.playbackRate = 2;
   }
 }
 
@@ -73,8 +85,11 @@ document.getElementById('speed25').addEventListener('click', async () => {
 
 function speed25() {
   const videoPlayer = document.querySelector('video');
+  const videoContainer = document.querySelector('.rendererContainer');
   if (videoPlayer) {
     videoPlayer.playbackRate = 2.5;
+  } else if (videoContainer) {
+    videoContainer.playbackRate = 2.5;
   }
 }
 
@@ -89,8 +104,11 @@ document.getElementById('speed3').addEventListener('click', async () => {
 
 function speed3() {
   const videoPlayer = document.querySelector('video');
+  const videoContainer = document.querySelector('.rendererContainer');
   if (videoPlayer) {
     videoPlayer.playbackRate = 3;
+  } else if (videoContainer) {
+    videoContainer.playbackRate = 3;
   }
 }
 
@@ -105,7 +123,10 @@ document.getElementById('speed10').addEventListener('click', async () => {
 
 function speed10() {
   const videoPlayer = document.querySelector('video');
+  const videoContainer = document.querySelector('.rendererContainer');
   if (videoPlayer) {
     videoPlayer.playbackRate = 10;
+  } else if (videoContainer) {
+    videoContainer.playbackRate = 10;
   }
 }
