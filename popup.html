@@ -3,23 +3,60 @@
   <head>
     <title>Speed Control</title>
     <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
       div {
         display: flex;
         justify-content: center;
+        gap: 15px;
+        padding: 20px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
       }
       button {
-        margin: 5px;
-        padding: 5px;
+        padding: 10px 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: #66a6ff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s;
+        white-space: nowrap;
+      }
+      button:hover {
+        background-color: #5593e0;
+        transform: translateY(-2px);
+      }
+      button:active {
+        transform: scale(0.95);
+      }
+      #speedNormal {
+        background-color: #ff6b6b;
+      }
+      #speedNormal:hover {
+        background-color: #e35b5b;
       }
     </style>
   <body>
     <div>
-    <button id="speedNormal">Normal Speed</button>
-    <button id="speedDown">Speed Down</button>
-    <button id="speedUp">Speed Up</button>
-    <button id="speed2">2</button>
-    <button id="speed25">2.5</button>
-    <button id="speed3">3</button>
+    <button id="speedNormal">Reset</button>
+    <button id="speedDown">-.25</button>
+    <button id="speedUp">+.25</button>
+    <button id="speed2">2x</button>
+    <button id="speed25">2.5x</button>
+    <button id="speed3">3x</button>
+    <button id="speed10">10x</button>
     <script src="popup.js"></script>
   </div>
   </body>
